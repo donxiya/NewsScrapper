@@ -8,7 +8,6 @@ const mongoose = require('mongoose');
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-
 // express
 const PORT = process.env.PORT || 3000;
 let app = express();
