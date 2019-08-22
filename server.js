@@ -31,6 +31,7 @@ mongoose.Promise = Promise;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 mongoose.set('useCreateIndex', true)
 mongoose.connect(MONGODB_URI);
+const db = mongoose.connection;
 
 // Show any mongoose errors
 db.on("error", function(error) {
